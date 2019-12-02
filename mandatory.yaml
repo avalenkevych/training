@@ -212,6 +212,7 @@ spec:
     spec:
       # wait up to five minutes for the drain of connections
       terminationGracePeriodSeconds: 300
+      hostNetwork: true
       serviceAccountName: nginx-ingress-serviceaccount
       nodeSelector:
         kubernetes.io/os: linux
